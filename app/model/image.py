@@ -2,6 +2,7 @@ from sqlalchemy.orm import Mapped, mapped_column
 
 from app.core.model import Base
 
+
 class Image(Base):
     __tablename__ = 'image'
 

@@ -3,13 +3,13 @@ import os
 from logging.config import fileConfig
 
 from dotenv import load_dotenv
-from sqlalchemy.ext.asyncio import async_engine_from_config
 from sqlalchemy import pool, text
+from sqlalchemy.ext.asyncio import async_engine_from_config
 
 from alembic import context
 from app.core.model import Base
-from app.model.shcool import *
 from app.model.image import *
+from app.model.shcool import *
 
 load_dotenv()
 

@@ -1,8 +1,7 @@
-import openai
 import httpx
+import openai
 
 from app.core.config import config
-
 
 client = openai.OpenAI(
     api_key=config.YANDEX_API_KEY,

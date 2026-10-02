@@ -1,5 +1,6 @@
-from app.core.s3 import s3_client
 from app.core.config import config
+from app.core.s3 import s3_client
+
 
 def upload_to_storage(img_bytes: bytes, filename: str) -> str:
     s3_client.put_object(

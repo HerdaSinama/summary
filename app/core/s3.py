@@ -1,4 +1,5 @@
 import boto3
+
 from .config import config
 
 s3_client = boto3.client(

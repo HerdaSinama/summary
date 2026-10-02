@@ -5,19 +5,20 @@ Revises:
 Create Date: 2026-09-21 12:47:50.293914
 
 """
-from typing import Sequence, Union
+import json
+import os
+from collections.abc import Sequence
+
+import geoalchemy2
+import sqlalchemy as sa
 
 from alembic import op
-import sqlalchemy as sa
-import geoalchemy2
-import os
-import json
 
 # revision identifiers, used by Alembic.
 revision: str = '2bce8d22df62'
-down_revision: Union[str, Sequence[str], None] = None
-branch_labels: Union[str, Sequence[str], None] = None
-depends_on: Union[str, Sequence[str], None] = None
+down_revision: str | Sequence[str] | None = None
+branch_labels: str | Sequence[str] | None = None
+depends_on: str | Sequence[str] | None = None
 
 
 def upgrade() -> None:

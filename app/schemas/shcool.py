@@ -1,7 +1,7 @@
-from pydantic import BaseModel
-from pydantic import dataclasses
+from pydantic import BaseModel, dataclasses
 
 from app.core.schemas import GeoPoint
+
 
 @dataclasses
 class SchoolModel(BaseModel):
