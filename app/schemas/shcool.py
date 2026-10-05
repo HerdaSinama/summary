@@ -1,10 +1,7 @@
-from pydantic import BaseModel, dataclasses
-
-from app.core.schemas import GeoPoint
+from app.core.schemas import BaseModelOut, GeoPoint
 
 
-@dataclasses
-class SchoolModel(BaseModel):
+class SchoolModel(BaseModelOut):
     name: str
     adderss: str
     type: str
